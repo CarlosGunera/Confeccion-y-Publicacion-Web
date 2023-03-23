@@ -1,0 +1,59 @@
+:root {
+	--bg: black;
+	--color: green;
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	background: var(--bg);
+	color: var(--color);
+	display: flex;
+	flex-direction: column;
+	font-family: Courier;
+	margin: 0 86px;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+	margin-bottom: 46px;
+}
+
+header,
+footer {
+	text-align: center;
+}
+
+footer {
+	background: var(--bg);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+}
+
+footer>span {
+	animation: footerAni .2s ease-in 6 alternate;
+	background: var(--bg);
+	border-top: 2px solid var(--color);
+	display: block;
+	font-size: 18px;
+	margin: 0 auto;
+	padding: 6px;
+	transform-origin: bottom;
+	transition: .6s;
+	width: 66%;
+}
+
+footer>span:hover {
+	transform: scale(1.16);
+}
+
+@keyframes footerAni {
+	to {
+		transform: scale(1.16);
+	}
+}

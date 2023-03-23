@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+#principal {
+	position: relative;
+	top: 40px;
+	width: 75%;
+	margin: 0 auto;
+	/*esto sirve para centrar el contenedor*/
+	text-align: center;
+	border: solid 5px #8abbe4;
+}
+
+.izquierdo {
+	width: 40%;
+	float: left;
+}
+
+.derecho {
+	width: 40%;
+	float: right;
+}
+
+.imagen250 {
+	width: 250px;
+	height: 250px;
+}
+
+.anchocompleto {
+	width: 100%;
+	clear: both;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 5em;
+}
