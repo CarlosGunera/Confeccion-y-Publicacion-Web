@@ -1,0 +1,33 @@
+html {
+	background: #EEE;
+	height: 100%;
+}
+
+body {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-areas:
+		"cabecera	cabecera"
+		"enlaces	contenido"
+		".			pie";
+	grid-template-columns: 150px auto;
+	grid-template-rows: 50px auto 50px;
+	height: calc(100% - 30px);
+	margin: 15px 30px;
+}
+
+header {
+	grid-area: cabecera;
+}
+
+nav {
+	grid-area: enlaces;
+}
+
+main {
+	grid-area: contenido;
+}
+
+footer {
+	grid-area: pie;
+}
